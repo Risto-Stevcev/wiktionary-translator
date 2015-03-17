@@ -1,0 +1,355 @@
+<html>
+  <head>
+    <script type="application/javascript" src="options.js"></script>
+    <style>
+      html, body {
+          font-family: Verdana, Arial;
+          font-size: 18px;
+      }
+
+      strong {
+          font-family: monospace;
+          margin-right: 1em;
+      }
+
+      a, a:active, a:visited {
+          text-decoration: none;
+          color: darkslategray;
+      }
+
+      a:hover {
+          font-weight: bold;
+      }
+    </style>
+  </head>
+  <body>
+  <p>
+    <b>Language:</b> 
+    <span id="currlang"></span>
+  </p>
+  <p>
+      <strong>A</strong>
+      <a href="#" id="af">Afrikaans</a>
+      <b>&#183;</b>
+      <a href="#" id="sq">Albanian</a>
+      <b>&#183;</b>
+      <a href="#" id="als">Alemannisch</a>
+      <b>&#183;</b>
+      <a href="#" id="am">Amharic</a>
+      <b>&#183;</b>
+      <a href="#" id="ar">Arabic</a>
+      <b>&#183;</b>
+      <a href="#" id="an">Aragonese</a>
+      <b>&#183;</b>
+      <a href="#" id="hy">Armenian</a>
+      <b>&#183;</b>
+      <a href="#" id="roa-rup">Aromanian</a>
+      <b>&#183;</b>
+      <a href="#" id="ast">Asturian</a>
+      <b>&#183;</b>
+      <a href="#" id="ay">Aymara</a>
+      <b>&#183;</b>
+      <a href="#" id="az">Azerbaijani</a>
+      <br/>
+      <strong>B</strong>
+      <a href="#" id="eu">Basque</a>
+      <b>&#183;</b>
+      <a href="#" id="be">Belarusian</a>
+      <b>&#183;</b>
+      <a href="#" id="bn">Bengali</a>
+      <b>&#183;</b>
+      <a href="#" id="bs">Bosnian</a>
+      <b>&#183;</b>
+      <a href="#" id="br">Breton</a>
+      <b>&#183;</b>
+      <a href="#" id="bg">Bulgarian</a>
+      <b>&#183;</b>
+      <a href="#" id="my">Burmese</a>
+      <br/>
+      <strong>C</strong>
+      <a href="#" id="ca">Catalan</a>
+      <b>&#183;</b>
+      <a href="#" id="chr">Cherokee</a>
+      <b>&#183;</b>
+      <a href="#" id="zh">Chinese</a>
+      <b>&#183;</b>
+      <a href="#" id="zh-min-nan">Chinese (Min Nan)</a>
+      <b>&#183;</b>
+      <a href="#" id="kw">Cornish</a>
+      <b>&#183;</b>
+      <a href="#" id="co">Corsican</a>
+      <b>&#183;</b>
+      <a href="#" id="hr">Croatian</a>
+      <b>&#183;</b>
+      <a href="#" id="cs">Czech</a>
+      <br/>
+      <strong>D</strong>
+      <a href="#" id="da">Danish</a>
+      <b>&#183;</b>
+      <a href="#" id="dv">Divehi</a>
+      <b>&#183;</b>
+      <a href="#" id="nl">Dutch</a>
+      <br/>
+      <strong>E</strong>
+      <a href="#" id="en">English</a>
+      <b>&#183;</b>
+      <a href="#" id="eo">Esperanto</a>
+      <b>&#183;</b>
+      <a href="#" id="et">Estonian</a>
+      <br/>
+      <strong>F</strong>
+      <a href="#" id="fo">Faroese</a>
+      <b>&#183;</b>
+      <a href="#" id="fj">Fijian</a>
+      <b>&#183;</b>
+      <a href="#" id="fi">Finnish</a>
+      <b>&#183;</b>
+      <a href="#" id="fr">French</a>
+      <br/>
+      <strong>G</strong>
+      <a href="#" id="gl">Galician</a>
+      <b>&#183;</b>
+      <a href="#" id="ka">Georgian</a>
+      <b>&#183;</b>
+      <a href="#" id="de">German</a>
+      <b>&#183;</b>
+      <a href="#" id="el">Greek</a>
+      <b>&#183;</b>
+      <a href="#" id="gn">Guarani</a>
+      <b>&#183;</b>
+      <a href="#" id="gu">Gujarati</a>
+      <br/>
+      <strong>H</strong>
+      <a href="#" id="ha">Hausa</a>
+      <b>&#183;</b>
+      <a href="#" id="he">Hebrew</a>
+      <b>&#183;</b>
+      <a href="#" id="hi">Hindi</a>
+      <b>&#183;</b>
+      <a href="#" id="hu">Hungarian</a>
+      <br/>
+      <strong>I</strong>
+      <a href="#" id="is">Icelandic</a>
+      <b>&#183;</b>
+      <a href="#" id="io">Ido</a>
+      <b>&#183;</b>
+      <a href="#" id="id">Indonesian</a>
+      <b>&#183;</b>
+      <a href="#" id="ia">Interlingua</a>
+      <b>&#183;</b>
+      <a href="#" id="ie">Interlingue</a>
+      <b>&#183;</b>
+      <a href="#" id="iu">Inuktitut</a>
+      <b>&#183;</b>
+      <a href="#" id="ik">Inupiaq</a>
+      <b>&#183;</b>
+      <a href="#" id="ga">Irish</a>
+      <b>&#183;</b>
+      <a href="#" id="it">Italian</a>
+      <br/>
+      <strong>J</strong>
+      <a href="#" id="ja">Japanese</a>
+      <b>&#183;</b>
+      <a href="#" id="jv">Javanese</a>
+      <br/>
+      <strong>K</strong>
+      <a href="#" id="kl">Kalaallisut</a>
+      <b>&#183;</b>
+      <a href="#" id="kn">Kannada</a>
+      <b>&#183;</b>
+      <a href="#" id="ks">Kashmiri</a>
+      <b>&#183;</b>
+      <a href="#" id="csb">Kashubian</a>
+      <b>&#183;</b>
+      <a href="#" id="kk">Kazakh</a>
+      <b>&#183;</b>
+      <a href="#" id="km">Khmer</a>
+      <b>&#183;</b>
+      <a href="#" id="rw">Kinyarwanda</a>
+      <b>&#183;</b>
+      <a href="#" id="ko">Korean</a>
+      <b>&#183;</b>
+      <a href="#" id="ku">Kurdish</a>
+      <b>&#183;</b>
+      <a href="#" id="ky">Kyrgyz</a>
+      <br/>
+      <strong>L</strong>
+      <a href="#" id="lo">Lao</a>
+      <b>&#183;</b>
+      <a href="#" id="la">Latin</a>
+      <b>&#183;</b>
+      <a href="#" id="lv">Latvian</a>
+      <b>&#183;</b>
+      <a href="#" id="li">Limburgish</a>
+      <b>&#183;</b>
+      <a href="#" id="ln">Lingala</a>
+      <b>&#183;</b>
+      <a href="#" id="lt">Lithuanian</a>
+      <b>&#183;</b>
+      <a href="#" id="jbo">Lojban</a>
+      <b>&#183;</b>
+      <a href="#" id="nds">Low German</a>
+      <b>&#183;</b>
+      <a href="#" id="lb">Luxembourgish</a>
+      <br/>
+      <strong>M</strong>
+      <a href="#" id="mk">Macedonian</a>
+      <b>&#183;</b>
+      <a href="#" id="mg">Malagasy</a>
+      <b>&#183;</b>
+      <a href="#" id="ml">Malayalam</a>
+      <b>&#183;</b>
+      <a href="#" id="ms">Malay</a>
+      <b>&#183;</b>
+      <a href="#" id="mt">Maltese</a>
+      <b>&#183;</b>
+      <a href="#" id="gv">Manx</a>
+      <b>&#183;</b>
+      <a href="#" id="mi">Maori</a>
+      <b>&#183;</b>
+      <a href="#" id="mr">Marathi</a>
+      <b>&#183;</b>
+      <a href="#" id="mn">Mongolian</a>
+      <br/>
+      <strong>N</strong>
+      <a href="#" id="nah">N&#257;huatl</a>
+      <b>&#183;</b>
+      <a href="#" id="na">Nauru</a>
+      <b>&#183;</b>
+      <a href="#" id="ne">Nepali</a>
+      <b>&#183;</b>
+      <a href="#" id="no">Norwegian (bokm&#229;l)</a>
+      <b>&#183;</b>
+      <a href="#" id="nn">Norwegian Nynorsk</a>
+      <br/>
+      <strong>O</strong>
+      <a href="#" id="oc">Occitan</a>
+      <b>&#183;</b>
+      <a href="#" id="ang">Old English</a>
+      <b>&#183;</b>
+      <a href="#" id="or">Oriya</a>
+      <b>&#183;</b>
+      <a href="#" id="om">Oromo</a>
+      <br/>
+      <strong>P</strong>
+      <a href="#" id="ps">Pashto</a>
+      <b>&#183;</b>
+      <a href="#" id="fa">Persian</a>
+      <b>&#183;</b>
+      <a href="#" id="pl">Polish</a>
+      <b>&#183;</b>
+      <a href="#" id="pt">Portuguese</a>
+      <b>&#183;</b>
+      <a href="#" id="pa">Punjabi</a>
+      <br/>
+      <strong>Q</strong>
+      <a href="#" id="qu">Quechua</a>
+      <br/>
+      <strong>R</strong>
+      <a href="#" id="ro">Romanian</a>
+      <b>&#183;</b>
+      <a href="#" id="ru">Russian</a>
+      <br/>
+      <strong>S</strong>
+      <a href="#" id="sm">Samoan</a>
+      <b>&#183;</b>
+      <a href="#" id="sg">Sango</a>
+      <b>&#183;</b>
+      <a href="#" id="sa">Sanskrit</a>
+      <b>&#183;</b>
+      <a href="#" id="gd">Scottish Gaelic</a>
+      <b>&#183;</b>
+      <a href="#" id="sr">Serbian</a>
+      <b>&#183;</b>
+      <a href="#" id="sh">Serbo-Croatian</a>
+      <b>&#183;</b>
+      <a href="#" id="scn">Sicilian</a>
+      <b>&#183;</b>
+      <a href="#" id="simple">Simple English</a>
+      <b>&#183;</b>
+      <a href="#" id="sd">Sindhi</a>
+      <b>&#183;</b>
+      <a href="#" id="si">Sinhala</a>
+      <b>&#183;</b>
+      <a href="#" id="sk">Slovak</a>
+      <b>&#183;</b>
+      <a href="#" id="sl">Slovenian</a>
+      <b>&#183;</b>
+      <a href="#" id="so">Somali</a>
+      <b>&#183;</b>
+      <a href="#" id="st">Southern Sotho</a>
+      <b>&#183;</b>
+      <a href="#" id="es">Spanish</a>
+      <b>&#183;</b>
+      <a href="#" id="su">Sundanese</a>
+      <b>&#183;</b>
+      <a href="#" id="sw">Swahili</a>
+      <b>&#183;</b>
+      <a href="#" id="ss">Swati</a>
+      <b>&#183;</b>
+      <a href="#" id="sv">Swedish</a>
+      <br/>
+      <strong>T</strong>
+      <a href="#" id="tl">Tagalog</a>
+      <b>&#183;</b>
+      <a href="#" id="tg">Tajik</a>
+      <b>&#183;</b>
+      <a href="#" id="ta">Tamil</a>
+      <b>&#183;</b>
+      <a href="#" id="tt">Tatar</a>
+      <b>&#183;</b>
+      <a href="#" id="te">Telugu</a>
+      <b>&#183;</b>
+      <a href="#" id="th">Thai</a>
+      <b>&#183;</b>
+      <a href="#" id="bo">Tibetan</a>
+      <b>&#183;</b>
+      <a href="#" id="ti">Tigrinya</a>
+      <b>&#183;</b>
+      <a href="#" id="tpi">Tok Pisin</a>
+      <b>&#183;</b>
+      <a href="#" id="ts">Tsonga</a>
+      <b>&#183;</b>
+      <a href="#" id="tn">Tswana</a>
+      <b>&#183;</b>
+      <a href="#" id="tr">Turkish</a>
+      <b>&#183;</b>
+      <a href="#" id="tk">Turkmen</a>
+      <br/>
+      <strong>U</strong>
+      <a href="#" id="uk">Ukrainian</a>
+      <b>&#183;</b>
+      <a href="#" id="ur">Urdu</a>
+      <b>&#183;</b>
+      <a href="#" id="ug">Uyghur</a>
+      <b>&#183;</b>
+      <a href="#" id="uz">Uzbek</a>
+      <br/>
+      <strong>V</strong>
+      <a href="#" id="vi">Vietnamese</a>
+      <b>&#183;</b>
+      <a href="#" id="vo">Volap&#252;k</a>
+      <br/>
+      <strong>W</strong>
+      <a href="#" id="wa">Walloon</a>
+      <b>&#183;</b>
+      <a href="#" id="cy">Welsh</a>
+      <b>&#183;</b>
+      <a href="#" id="fy">Western Frisian</a>
+      <b>&#183;</b>
+      <a href="#" id="pnb">Western Punjabi</a>
+      <b>&#183;</b>
+      <a href="#" id="wo">Wolof</a>
+      <br/>
+      <strong>X</strong>
+      <br/>
+      <strong>Y</strong>
+      <a href="#" id="yi">Yiddish</a>
+      <br/>
+      <strong>Z</strong>
+      <a href="#" id="za">Zhuang</a>
+      <b>&#183;</b>
+      <a href="#" id="zu">Zulu</a>
+  </p>
+  </body>
+</html>
